@@ -1,0 +1,4 @@
+key,type,isPrimary,isNull
+id,int,True,False
+name,char(20),False,True
+class,int,False,True

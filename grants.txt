@@ -1,0 +1,5 @@
+root#*#select,delete,update,insert
+
+admin#student#
+
+wrk#student#

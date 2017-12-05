@@ -1,0 +1,16 @@
+create table student (id int NOT NULL PRIMARY KEY, name char(20), class int);
+help table student;
+insert into student (id,name,class) values (1,'wrk',1);
+insert into student (id) values (1);
+insert into student (id) values (2);
+insert into student (id,name, class) values (2,'test',2);
+update student set name='test',class='3' where id=2;
+select * from student;
+select id,name from student where id=1 or name='test';
+select id,name from student where id=1 and name='test';
+select id,name from student where id>1;
+delete from student where id=2;
+delete from student;
+create user wrk with password wrk;
+grant select on student to admin;
+revoke select on student from admin;
